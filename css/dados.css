@@ -1,0 +1,9 @@
+.menuitem{
+        display: block;
+        list-style-type: disc;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        padding-inline-start: 40px;
+        unicode-bidi: isolate;
+}
+
