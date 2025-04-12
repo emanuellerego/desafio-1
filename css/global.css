@@ -44,7 +44,7 @@ body {
     color: white;
     padding: 20px 20px 20px 20px; /* padding-top aumentado para compensar navbar */
     position: fixed;
-    top: 0;
+    right: 10px;
     left: 0;
     margin-top: 100px;
   }
@@ -96,18 +96,18 @@ body {
   .main-content {
     margin-top: 100px;
     margin-left: 240px;
-    padding: 20px;
+    padding: 10px;
+    width: 100%;
   }
 
   .formulario {
     display: flex;
     flex-direction: column;
-    margin-top: 10px;
+    margin-top: 5px;
   }
 
   .formulario h4 {
-    color: blue;
-    
+    color: blue;  
   }
   
   .formulario label {
