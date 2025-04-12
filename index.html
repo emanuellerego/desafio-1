@@ -4,35 +4,135 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Solicitação de Passaporte</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
-    <nav>
-        <ul class="menu">
-            <ul><a href="#">Solicitação de passaporte</a></ul>
-                <li>
-                    <a href="#">Nova Solicitação</a>
-                    <a href="#">Consultar solicitação</a>
-                    <a href="#">Reemitir GRU de solicitação</a>
-                    <a href="#">Recuperar Nº do protocolo</a>
-                </li>
-            </ul>
-            <ul class="menu">
-            <ul><a href="#">Agendamento de atendimento</a></ul>
-                <li>
-                    <a href="#">Agendar</a>
-                    <a href="#">Reagendar</a>
-                    <a href="#">Consultar ou cancelar agendamento</a>
-                </li>
-            </ul>
-            <ul class="menu">
-                <ul><a href="#">Outros serviços</a></ul>
-                    <li>
-                        <a href="#">Formulário de adoção internacional</a>
-                        <a href="#">Pesquisa de satisfação</a>
-                    </li>
-                </ul> 
-      </ul>
-    </nav>  
+  <div class="navbar">
+    <div>
+      <h1>Nova Solicitação de Passaporte</h1>
+    </div>
+    <div class="top-links">
+      <a href="#">Solicitação de passaporte</a>
+      <a href="#">Agendamento de atendimento</a>
+      <a href="#">Outros serviços</a>
+    </div>
+  </div>
+  <div class="sidebar">
+    <a href="#painelUm"><h3>Dados Pessoais</h3></a>
+    <a href="#painelDois"><h3>Documentos</h3></a>
+    <a href="painelTres"><h3>Dados Complementares</h3></a>
+    <a href="painelQuatro"><h3>Revisar Dados</h3></a>
+  </div>
+  <div class="main-content">
+    <main></main>
+      <section class="formulario">
+        <h4>Dados Pessoais</h4>
+        <form action="#" method="post" enctype="multipart/form-data">
+        <section class="formulario">
+          <h4>Dados Pessoais</h4>
+          <form action="#" method="post" enctype="multipart/form-data">
+            <label class="formulario-nome" for="nome">Nome completo*:</label>
+            <input type="text" id="nome" name="nome" maxlength="999" required />
+  
+            <label for="sexo">Sexo*:</label>
+            <select class="formulario-sexo" id="sexo">
+              <option value=""></option>                       
+              <option value="">Feminino</option> 
+              <option value="">Masculino</option>
+            </select>
+  
+            <label for="filiacao1">Filiação 1:</label>
+            <input type="text" id="filiacao1" name="filiacao1" maxlength="999" required />
+  
+            <label for="sexo">Sexo:</label>
+            <select class="formulario-sexo" id="sexo">
+              <option value=""></option>                       
+              <option value="">Feminino</option> 
+              <option value="">Masculino</option>
+              <option value="">Não especificado</option>
+            </select>
+  
+            <label for="filiacao2">Filiação 2:</label>
+            <input type="text" id="filiacao1" name="filiacao2" maxlength="999" required />
+  
+            <label for="sexo">Sexo:</label>
+            <select class="formulario-sexo" id="sexo">
+              <option value=""></option>                       
+              <option value="">Feminino</option> 
+              <option value="">Masculino</option>
+              <option value="">Não especificado</option>
+            </select>
+            
+            <label for="nascimento">Data de nascimento:</label>
+            <input type="date" id="nascimento" name="nascimento" required />
+  
+            <div class="flex-row">
+              <input type="checkbox" id="emancipado" class="checkbox">
+              <label for="emancipado" class="checkbox-label">Emancipado</label>
+            </div>
+  
+            <div class="flex-row">
+              <input type="checkbox" id="adocao" class="checkbox">
+              <label for="adocao" class="checkbox-label">Adoção Internacional</label>
+            </div>
+  
+            <label for="raca-ou-cor">Raça ou cor:</label>
+            <select class="raca-ou-cor" id="raca-ou-cor">
+              <option value=""></option>                       
+              <option value="">Amarela</option> 
+              <option value="">Branca</option>
+              <option value="">Indígena</option>
+              <option value="">Parda</option> 
+              <option value="">Preta</option>
+              <option value="">Outras</option>
+              <option value="">Não desejo declarar</option>
+            </select>
+  
+            <label for="estado-civil">Estado civil:</label>
+            <select id="estado-civil">
+              <option value=""></option>                       
+              <option value="">Solteiro(a)</option> 
+              <option value="">Casado(a)</option>
+              <option value="">Viúvo(a)</option>
+              <option value="">Separado(a) Judicialmente</option> 
+              <option value="">Divorciado(a)</option>
+              <option value="">União Estável</option>
+            </select>
+    
+            <label class="pais" for="pais">País*:</label>
+            <input type="text" id="pais" name="pais" maxlength="999" required/>
+            <p>(para brasileiros com múltipla nacionalidade, selecionar Brasil)</p>
+  
+            <h4>Local de nascimento</h4>  
+            <label class="pais" for="pais">País*:</label>
+            <input type="text" id="pais" name="pais" maxlength="999" required/>
+  
+            <label class="uf" for="uf">UF*:</label>
+            <input type="text" id="uf" name="uf" maxlength="999" required/>
+  
+            <label class="cidade" for="cidade">Cidade*:</label>
+            <input type="text" id="cidade" name="cidade" maxlength="999" required/>
+    
+            <h4>Nomes Anteriores</h4>
+            <label class="nome-anterior" for="nome-anterior">Nome anterior:</label>
+            <input type="text" id="nome-anterior" name="nome-anterior" maxlength="999" required/>
+  
+            <label for="motivo">Motivo da mudança*:</label>
+            <select id="motivo">
+              <option value=""></option>                       
+              <option value="">Alteração por Mudança de Estado Civil</option> 
+              <option value="">Alteração por Decisão Judicial</option>
+              <option value="">Alteração por Registro em Cartório - Provimento 73/2018 Cnj</option>
+              <option value="">Separado(a) Judicialmente</option>
+            </select>
+  
+          <div class="button">
+            <button type="submit" class="submit-button">Próximo</button>
+          </div>        
+
+        </form>
+      </section>
+    </main>
+  </div>
 </body>
 </html>
