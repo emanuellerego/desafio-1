@@ -1,1 +1,1 @@
-Página ainda está incompleta
+Projeto ainda não foi finalizado.
